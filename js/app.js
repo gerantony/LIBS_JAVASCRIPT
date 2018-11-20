@@ -1,13 +1,8 @@
 document.observe("dom:loaded", function(){
+  colrojo();
 
-  $(".main-titulo").observe('mouseover', function(){
-    this.addClassName('activo');
-  })
-  $(".main-titulo").observe('mouseleave', function(){
-    this.removeClassName('activo');
-  })
-
-
-
-
+  $('activarJuego').observe('change', inicioJuego);
 })
+
+
+//Animación que cambia color del titulo
